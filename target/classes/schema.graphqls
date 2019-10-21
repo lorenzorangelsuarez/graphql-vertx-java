@@ -1,0 +1,20 @@
+
+
+schema{
+	query: Query
+}
+
+type Query{
+	todosLosConceptos: [Concepto]
+}
+
+type Concepto{
+	idConcepto: Int!
+	concepto: String
+	materia: Materia
+}
+
+type Materia{
+	idMateria: Int!
+	materia: String
+}
